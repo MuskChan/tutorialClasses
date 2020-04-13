@@ -1,27 +1,17 @@
-// pointer to classes example
+﻿// my first pointer
 #include <iostream>
 using namespace std;
 
-class Rectangle {
-    int width, height;
-public:
-    Rectangle(int x, int y) : width(x), height(y) {}
-    int area(void) { return width * height; }
-};
+int main()
+{
+    int firstvalue, secondvalue;
+    int* mypointer;
 
-
-int main() {
-    Rectangle obj(3, 4);
-    Rectangle* foo, * bar, * baz;
-    foo = &obj;
-    bar = new Rectangle(5, 6);
-    baz = new Rectangle[2]{ {2,5}, {3,6} };
-    cout << "obj's area: " << obj.area() << '\n';
-    cout << "*foo's area: " << foo->area() << '\n';
-    cout << "*bar's area: " << bar->area() << '\n';
-    cout << "baz[0]'s area:" << baz[0].area() << '\n';
-    cout << "baz[1]'s area:" << baz[1].area() << '\n';
-    delete bar;
-    delete[] baz;
+    mypointer = &firstvalue; //mypointer使用地址运算符（&）分配了firstvalue的地址
+    *mypointer = 10; //mypointer所指向的值分配为10  此时mypointer指向的存储位置为firstvalue 所以实际上修改了firstvalue的值
+    mypointer = &secondvalue;
+    *mypointer = 20;
+    cout << "firstvalue is " << firstvalue << '\n';
+    cout << "secondvalue is " << secondvalue << '\n';
     return 0;
 }
