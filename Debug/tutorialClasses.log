@@ -1,2 +1,6 @@
 ﻿  tutorialClasses.cpp
-  tutorialClasses.vcxproj -> E:\cpp\tutorialClasses\Debug\tutorialClasses.exe
+E:\cpp\tutorialClasses\tutorialClasses\tutorialClasses.cpp(14,22): error C2440: '=': cannot convert from 'int *' to 'int'
+E:\cpp\tutorialClasses\tutorialClasses\tutorialClasses.cpp(14,10): message : There is no context in which this conversion is possible
+E:\cpp\tutorialClasses\tutorialClasses\tutorialClasses.cpp(17,5): error C2100: illegal indirection
+E:\cpp\tutorialClasses\tutorialClasses\tutorialClasses.cpp(19,12): error C2440: '=': cannot convert from 'int' to 'int *'
+E:\cpp\tutorialClasses\tutorialClasses\tutorialClasses.cpp(19,10): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
