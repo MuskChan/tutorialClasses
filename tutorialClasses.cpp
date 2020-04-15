@@ -1,8 +1,9 @@
-﻿// my first program in C++
+﻿// Using namespace std
 #include <iostream>
+using namespace std;
 
 int main()
 {
-	std::cout << "hello world";
-	std::cout << "i am a C++ program";
+	cout << "hello world";
+	cout << "i am a C++ program";
 }
