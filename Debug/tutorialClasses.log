@@ -1,2 +1,2 @@
 ﻿  tutorialClasses.cpp
-  tutorialClasses.vcxproj -> E:\cpp\tutorialClasses\Debug\tutorialClasses.exe
+E:\cpp\tutorialClasses\tutorialClasses\tutorialClasses.cpp(18): error C4700: uninitialized local variable 'result' used
