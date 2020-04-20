@@ -1,2 +1,2 @@
 ﻿  tutorialClasses.cpp
-E:\cpp\tutorialClasses\tutorialClasses\tutorialClasses.cpp(21): error C4700: uninitialized local variable 'xtest' used
+  tutorialClasses.vcxproj -> E:\cpp\tutorialClasses\Debug\tutorialClasses.exe

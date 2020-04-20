@@ -1,24 +1,24 @@
-﻿// initialization of variables
-
+﻿// my first string 
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main()
+int  main()
 {
-	int a = 5;
-	int b(3);
-	int c{2};
-	int result;
+	string mystring;
+	string mystring2 ("  this is a mystring2");
+	string mystring3 {"  this is a mystring3" };
 
-	// 初始化类型和值
-	auto bar = a;
-	//decltype(a) xtest;
+	//与基本类型一样，所有初始化格式对字符串均有效：
+	mystring = "this is a string";
 
-	a = a + b;
-	result = a - c;
-	cout << result;
-	cout << "  bar =" << bar;
-	//cout << "  foo =" << xtest;
+	cout << mystring;
+	cout << mystring2;
+	cout << mystring3;
 
-	return  0;
+	//换行符 endl
+	cout << mystring << endl;
+	mystring = "This is a different string content";
+	cout << mystring << endl;
+	return 0;
 }
