@@ -1,23 +1,24 @@
-﻿// operating with variables
+﻿// initialization of variables
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	//declaring variables 变量声明
-	int a, b;
+	int a = 5;
+	int b(3);
+	int c{2};
 	int result;
 
-	// process
-	a = 5;
-	b = 2;
-	a = a + 1;
-	result = a - b;
+	// 初始化类型和值
+	auto bar = a;
+	//decltype(a) xtest;
 
-	//  print out the result;
+	a = a + b;
+	result = a - c;
 	cout << result;
+	cout << "  bar =" << bar;
+	//cout << "  foo =" << xtest;
 
-	//terminate the program:
-	return 0;
+	return  0;
 }
