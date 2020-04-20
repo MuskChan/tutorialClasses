@@ -1,17 +1,11 @@
-﻿// assignment operator 
+﻿// compound assignment operators
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	int a, b;
-	a = 10;
-	b = 4;
+	int a, b = 3;
 	a = b;
-	b = 7;
-
-	cout << "a:";
+	a += 2;
 	cout << a;
-	cout << " b:";
-	cout << b;
 }
