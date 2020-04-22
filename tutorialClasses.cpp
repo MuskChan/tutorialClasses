@@ -1,16 +1,21 @@
-﻿// cin with strings
+﻿// stringstreams
 #include <iostream>
 #include <string>
+#include <sstream>
 using namespace std;
 
 int main()
 {
 	string mystr;
-	cout << "What's your name? ";
+	float price = 0;
+	int quantity = 0;
+
+	cout << "Enter price: ";
 	getline(cin, mystr);
-	cout << "Hello " << mystr << ".\n";
-	cout << "What is you favorite team? ";
+	stringstream(mystr) >> price;
+	cout << "Enter quantity: ";
 	getline(cin, mystr);
-	cout << "I like " << mystr << " too!\n";
+	stringstream(mystr) >> quantity;
+	cout << "Total price: " << price * quantity << endl;
 	return 0;
 }
