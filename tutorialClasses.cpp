@@ -1,15 +1,14 @@
-﻿// custom countdown using while 
+﻿// echo machine
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
 {
-	int n = 10;
-
-	while (n > 0) {
-		cout << n << ", ";
-		--n;
-	}
-
-	cout << "liftoff!\n";
+	string str;
+	do {
+		cout << "Enter text: ";
+		getline(cin, str);
+		cout << "You entered: " << str << '\n';
+	} while (str != "goodbye");
 }
