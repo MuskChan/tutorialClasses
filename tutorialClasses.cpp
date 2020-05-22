@@ -1,15 +1,16 @@
-﻿// range-based for loop
+﻿// break loop exemple
 #include <iostream>
-#include <string>
 using namespace std;
 
-int main()
+int main ()
 {
-	//Initialization of variables 变量初始化
-	string str{ "hello!" };
-	for (char c : str)
+	for (int n = 10; n > 0; n--)
 	{
-		cout << "[" << c << "]";
+		cout << n << ",";
+		if (n == 3)
+		{
+			cout << "countdown aborted!";
+			break;
+		}
 	}
-	cout << '\n';
 }
